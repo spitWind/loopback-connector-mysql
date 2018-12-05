@@ -9,7 +9,7 @@
   "scripts": {
     "pretest": "node pretest.js",
     "lint": "eslint .",
-    "test": "mocha --timeout 10000 --require test/init.js test/*.js",
+    "test": "mocha --timeout 10000 --require test/init.js test/*.js --exit",
     "posttest": "npm run lint"
   },
   "dependencies": {
@@ -25,7 +25,7 @@
     "eslint": "^4.3.0",
     "eslint-config-loopback": "^8.0.0",
     "loopback-datasource-juggler": "^3.0.0",
-    "mocha": "^2.1.0",
+    "mocha": "^5.2.0",
     "rc": "^1.0.0",
     "should": "^8.0.2",
     "sinon": "^1.15.4"
