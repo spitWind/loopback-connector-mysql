@@ -58,8 +58,6 @@ describe('MySQL datetime handling', function() {
     }).then(function(inst) {
       inst.should.not.eql(null);
       inst.dob.toString().should.eql(d.toString());
-    }).catch(function(err) {
-      should.not.exist(err);
     });
   });
 
@@ -85,8 +83,6 @@ describe('MySQL datetime handling', function() {
         }).then(function(inst) {
           inst.should.not.eql(null);
           inst.createdAt.toString().should.eql(expected);
-        }).catch(function(err) {
-          should.not.exist(err);
         });
       });
     }
@@ -104,8 +100,6 @@ describe('MySQL datetime handling', function() {
       inst.should.not.eql(null);
       var lastLogon = new Date(inst.lastLogon);
       lastLogon.toJSON().should.eql(d.toJSON());
-    }).catch(function(err) {
-      should.not.exist(err);
     });
   });
 });
